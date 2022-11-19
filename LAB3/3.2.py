@@ -16,6 +16,6 @@ for i in range(max(len(n1), len(n2)) + 1):
     n3 += str((digit1 + digit2 + addToNextDigit) % 10)
     addToNextDigit = (digit1 + digit2 + addToNextDigit) // 10
 
-n3 = n3[::-1]
+n3 = n3[::-1].lstrip("0")
 print(n3)
 
